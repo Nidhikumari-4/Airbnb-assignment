@@ -19,19 +19,17 @@ const Cards = () => {
       <div className="Cards">
         {fake.map((values) => {
           return (
-            <>
-              <div className="Cards_container">
-                <div>
-                  <img src={values.image} alt="img"></img>
-                </div>
-                <div className="contents">
-                  <p className="title">{values.title}</p>
-                  <p className="price">{values.price}</p>
-                  <p className="category">{values.category}</p>
-                  <p className="rate">{values.rating.rate}</p>
-                </div>
+            <div className="Cards_container" key={values.id}>
+              <div>
+                <img src={values.image} alt="img"></img>
               </div>
-            </>
+              <div className="contents">
+                <p className="title">{values.title}</p>
+                <p className="price">{values.price}</p>
+                <p className="category">{values.category}</p>
+                <p className="rate">{values.rating.rate}</p>
+              </div>
+            </div>
           );
         })}
       </div>

@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { IoSearchCircleSharp } from "react-icons/io5";
 import { FaAirbnb } from "react-icons/fa";
-import { FiGlobe } from "react-icons/fi";
+import { FiGlobe, FiShoppingCart } from "react-icons/fi";
 import { FiMenu } from "react-icons/fi";
 import { FaUserCircle } from "react-icons/fa";
 import "./Navbar.css";
@@ -66,6 +66,11 @@ const Navbar = () => {
 
         {/* Profile Section */}
         <div className="Profile_section">
+          <div className="cart">
+            <a href="#">
+              <FiShoppingCart />
+            </a>
+          </div>
           <div className="host">
             <a href="#">Become a host</a>
           </div>

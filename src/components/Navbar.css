@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   border-bottom: 0.1px solid #ddd;
 }
 .Header_Container {
@@ -69,6 +70,17 @@ a {
   font-weight: 700;
   padding: 5px;
   letter-spacing: 0.3px;
+}
+.cart {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px;
+  position: relative;
+  right: 5%;
+  letter-spacing: 0.3px;
+}
+.cart:hover {
+  border: 2px solid black;
 }
 
 .globe {

@@ -23,31 +23,29 @@ const Categories = () => {
 
   return (
     <div className="Categories">
-      <div className="icons">
-        <div>
-          <MdOutlineElectricalServices />
+      <div className="Categories_container">
+        <div className="icons">
+          <div>
+            <MdOutlineElectricalServices />
+          </div>
+          <div>
+            <GiDoubleNecklace />
+          </div>
+          <div className="shirt">
+            <IoMdShirt />
+          </div>
+          <div className="dress">
+            <GiAmpleDress />
+          </div>
         </div>
-        <div>
-          <GiDoubleNecklace />
-        </div>
-        <div className="shirt">
-          <IoMdShirt />
-        </div>
-        <div className="dress">
-          <GiAmpleDress />
-        </div>
-      </div>
-      {category.map((values) => {
-        return (
-          <>
-            <div className="Categories_container">
-              <div className="Heading">
-                <div>{values}</div>
-              </div>
+        {category.map((values) => {
+          return (
+            <div className="Heading" key={values}>
+              <div>{values}</div>
             </div>
-          </>
-        );
-      })}{" "}
+          );
+        })}{" "}
+      </div>
     </div>
   );
 };
